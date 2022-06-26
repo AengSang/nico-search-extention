@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>nicoSearchExtention</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+
+  <body>
+    <h1>検索タグ</h1>
+    <textarea id='tagadd' cols="20" rows="4"></textarea>
+    <h1>除外タグ</h1>
+    <textarea id='tagsub' cols="20" rows="4"></textarea>
+    <hr>
+    <h1 id= 'urlchange'>以下のボタンで検索</h1>
+    <input type='button' id='current' value='このタブで検索' />
+    <input type='button' id='newtab' value='新しいタブで検索' />
+    <script src='../lib/jquery-3.6.0.min.js'></script>
+    <script src='popup-main.js'></script>
+  </body>
+</html>

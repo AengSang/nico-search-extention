@@ -1,0 +1,29 @@
+#tagadd{
+  resize: none;
+  border: 10px solid #000000;
+  width: 400px;
+  height: 150px;
+  font-size: 16px;
+  background-color: #ffffc4;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: darkolivegreen;
+  box-shadow: 0 0 1px 2px darkolivegreen;
+}
+
+#tagsub{
+  resize: none;
+  border: 10px solid #000000;
+  width: 400px;
+  height: 150px;
+  font-size: 16px;
+  background-color: #ffffc4;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: darkolivegreen;
+  box-shadow: 0 0 1px 2px darkolivegreen;
+}
+
+h1{
+  font : caption;
+}

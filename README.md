@@ -1,5 +1,5 @@
 # nico-search-extention
-ニコニコ動画の除外タブ検索を強化するChrome拡張機能です。
+ニコニコ動画の除外タブ検索を強化するChrome拡張機能です。<br>
 使い方:https://www.nicovideo.jp/watch/sm40678635
 
 このファイルからのインストール方法

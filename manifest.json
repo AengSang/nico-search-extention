@@ -17,7 +17,7 @@
     ],
     "content_scripts":[{
         "matches":[
-            "*://*.nicovideo.jp/watch/*"
+            "*://www.nicovideo.jp/watch/*"
         ],
         "js":[
             "content/content.js",

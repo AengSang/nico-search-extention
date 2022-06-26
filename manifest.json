@@ -27,7 +27,7 @@
     },
     {
         "matches":[
-            "*://*.nicovideo.jp/tag/*"
+            "*://www.nicovideo.jp/tag/*"
         ],
         "js":[
             "content/tagChangeDom.js"

@@ -20,8 +20,7 @@
             "*://www.nicovideo.jp/watch/*"
         ],
         "js":[
-            "content/content.js",
-            "lib/jquery-3.6.0.min.js"
+            "content/content.js"
         ],
         "run_at":"document_idle"
     },

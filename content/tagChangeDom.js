@@ -22,7 +22,7 @@ function DomCheangeFuncrion(){
               }
             }
             if(con){
-              insertText += inputTextValues[i];
+              insertText = insertText + " " + inputTextValues[i];
             }
         }
         console.log("処理後の表示タグは"+insertText+"です");

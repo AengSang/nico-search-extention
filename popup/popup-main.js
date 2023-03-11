@@ -33,9 +33,9 @@ function loadData(){
             }
           }
           if(con&&tags[i][0]=="-"){
-            $('#tagsub').val($('#tagsub').val() + tags[i] + "\n");
+            document.getElementById('tagsub').value = (document.getElementById('tagsub').value + tags[i] + "\n");
           }else if(con){
-            $('#tagadd').val($('#tagadd').val() + tags[i] + "\n");
+            document.getElementById('tagadd').value = (document.getElementById('tagadd').value + tags[i] + "\n");
           }
         }
       }
@@ -44,12 +44,12 @@ function loadData(){
 }
 
 //現在のタブ、新しいタブで検索のクリック時の動作
-$('#current').on('click', function(){
+document.getElementById('current').onclick = () => {
   openAnchor(false);
-});
-$('#newtab').on('click', function(){
+};
+document.getElementById('newtab').onclick = () => {
   openAnchor(true);
-});
+};
 
 
 function openAnchor(tabselect) {
@@ -67,8 +67,8 @@ function openAnchor(tabselect) {
     }
     //テキストエリアと除外設定からタグ検索URLを作成
     let insertUrl = "https://nicovideo.jp/tag/";
-    let urladds = $('#tagadd').val().split(/\n| /);
-    let urlsubs = $('#tagsub').val().split(/\n| /);
+    let urladds = document.getElementById('tagadd').value.split(/\n| /);
+    let urlsubs = document.getElementById('tagsub').value.split(/\n| /);
     for(let i = 0; i < urladds.length; i++){
       if(urladds[i] != "") insertUrl = insertUrl + urladds[i] + " ";
     }

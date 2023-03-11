@@ -16,7 +16,7 @@ function loadData(){
         if(urladds[i] != "") insertUrl = insertUrl + urladds[i] + "\n";
       }
       console.log("tagsubhid in local strage is" + insertUrl);
-      $('#tagsubhid').val(insertUrl);
+      document.getElementById('tagsubhid').value = insertUrl;
       console.log("set finished : tagsubhid was set in textbox");
     }
     if(tagsys.popadapt == null){
@@ -41,7 +41,7 @@ function loadData(){
 document.getElementById('save').onclick = () => {
   console.log("save button clicked");
   let insertUrl = "";
-  let urladds = document.getElementById('tagsubhid').val().split(/\n| /);
+  let urladds = document.getElementById('tagsubhid').value.split(/\n| /);
   for(let i = 0; i < urladds.length; i++){
     if(urladds[i] != "") insertUrl = insertUrl + urladds[i] + " ";
   }
@@ -49,7 +49,7 @@ document.getElementById('save').onclick = () => {
   let searchcheck = document.getElementById("tagsearchexclusioncheck").checked;
   console.log("start save :" + insertUrl + " popup:" + popupcheck + " search:" + searchcheck);
   chrome.storage.local.set({tagsubhid: insertUrl, popadapt: popupcheck, searchadapt: searchcheck}, () => {
-    $("#savechange").text("保存しました");
+    document.getElementById('savechange').textContent = "保存しました";
     console.log("save finished");
   });
   alert("完全に適応するにはブラウザを再起動してください");

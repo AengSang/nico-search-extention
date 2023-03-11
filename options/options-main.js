@@ -38,10 +38,10 @@ function loadData(){
   });
 }
 
-$('#save').on('click', () => {
+document.getElementById('save').onclick = () => {
   console.log("save button clicked");
   let insertUrl = "";
-  let urladds = $('#tagsubhid').val().split(/\n| /);
+  let urladds = document.getElementById('tagsubhid').val().split(/\n| /);
   for(let i = 0; i < urladds.length; i++){
     if(urladds[i] != "") insertUrl = insertUrl + urladds[i] + " ";
   }
@@ -53,6 +53,5 @@ $('#save').on('click', () => {
     console.log("save finished");
   });
   alert("完全に適応するにはブラウザを再起動してください");
-});
-
+};
 
